@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="E4-TestApp"
+            application="E4-TestApp.id1">
+         <property
+               name="appName"
+               value="E4-TestApp">
+         </property>
+         <property
+               name="applicationXMI"
+               value="E4-TestApp/Application.e4xmi">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/E4-TestApp/css/default.css">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="id1"
+         name="FooBar"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="application.FooBarApp">
+         </run>
+      </application>
+   </extension>
+
+</plugin>

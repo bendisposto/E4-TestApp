@@ -1,0 +1,1 @@
+Experiment to build a headless E4 application using maven tycho. 
